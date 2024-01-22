@@ -1,0 +1,85 @@
+h1 {
+  color:blueviolet
+}
+p .error {
+  border: dashed 1px red;
+}
+p .info {
+  border: dashed 1px blue;
+}
+.error {
+  color: red;
+}
+input[readonly]{
+  background-color: #e6e6e6;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: solid 1px #4c4b4b;
+  text-align: left;
+  padding: 8px;
+}
+thead {
+  background-color: #8a8a8a;
+  color: white;
+}
+a {
+  color: #4c4b4b;
+  text-decoration: none;
+}
+
+button {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 1px solid #000;
+  color: #000;
+  background: transparent;
+  z-index: 0;
+  margin: 10px;
+}
+button:hover:after {
+  top: 0;
+  left: 0;
+}
+button:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  transition: 0.2s;
+}
+.css-button-retro--green:after{
+  background-color: #80ed99;
+}
+.css-button-retro--yellow:after{
+  background-color: #f6f68e;
+}
+.css-button-retro--pink:after{
+  background-color: #ef22da;
+}
+.css-button-retro--purple:after{
+  background-color: #b19cd9;
+}
+.css-button-retro--blue:after{
+  background-color: #68a6e4;
+}
+.css-button-retro--red:after{
+  background-color: #cf2222c4;
+}
+
+

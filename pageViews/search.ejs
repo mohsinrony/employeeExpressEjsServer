@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/basicStyle.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Search Persons</h1>
+      <form action="/search" method="POST">
+        <div id="options">
+          <label>Choose key: </label>
+          <select name="key">
+            <% keys.forEach(key => { %>
+            <option value="<%= key %>"><%= key %></option>
+            <% }) %>
+          </select>
+          <label> Value: <input type="text" name="searchvalue" /></label>
+          <button class="css-button-retro--yellow" type="submit">Submit</button>
+          <button class="css-button-retro--blue"><a href="/">Menu</a></button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
